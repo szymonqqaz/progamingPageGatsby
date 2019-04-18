@@ -20,12 +20,7 @@ const IndexPage = ({data}) => (
 
 export const allAlbumPagesQuery = graphql`
   {
-    allSitePage(filter: {
-      component:
-      {
-        eq: "C:/Users/Szymon/Desktop/progrmation page/src/templates/myTemplate.js"
-      }
-        })
+    allSitePage
       {
       edges {
         node {
