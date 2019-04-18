@@ -20,7 +20,12 @@ const IndexPage = ({data}) => (
 
 export const allAlbumPagesQuery = graphql`
   {
-    allSitePage
+    allSitePage(filter: {
+      component:
+      {
+        eq: "/home/circleci/repo/src/templates/myTemplate.js"
+      }
+        })
       {
       edges {
         node {
